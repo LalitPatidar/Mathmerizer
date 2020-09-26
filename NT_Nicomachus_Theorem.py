@@ -3,7 +3,7 @@ from manimlib.imports import *
 class SquareEqualCubes(Scene):
     def construct(self):
         self.write_equation()
-        self.calculate_LHS()
+        self.calculate_LHS_RHS()
 
     def write_equation(self):
         theorem = TextMobject("Number Theory: Nicomachus's Theorem").to_edge(UP)
@@ -62,7 +62,7 @@ class SquareEqualCubes(Scene):
         )
         self.wait()
 
-    def calculate_LHS(self):
+    def calculate_LHS_RHS(self):
         equation0 = TexMobject('(1+2+3+....+n)^2', '=', '1^3 +2^3 + 3^3 +....+n^3')
         equation0.set_color(BLUE)
         equation0.to_edge(UP)
