@@ -1,5 +1,7 @@
 from manimlib.imports import *
 
+# Nicomachus's Theorem
+
 class SquareEqualCubes(Scene):
     def construct(self):
         self.write_equation()
